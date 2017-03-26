@@ -4,7 +4,7 @@
 
 %h3 Make a New Appointment
 
-= form_for @appointment, url: root_path do |f|
+= form_for @appointment do |f|
   = f.text_field :title
   = f.text_field :appt_time
   = f.submit "Make Appointment"
