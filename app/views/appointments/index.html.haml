@@ -2,13 +2,4 @@
 
 %h2 Appointments
 
-%h3 Make a New Appointment
-
-= form_for @appointment do |f|
-  = f.text_field :title
-  = f.text_field :appt_time
-  = f.submit "Make Appointment"
-
-- @appointments.each do |a|
-  %h3= a.title
-  %p= a.appt_time
+= react_component('Appointments', appointments: @appointments)
